@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	#slider{
+		overflow: hidden;
+	}
+	#slider figure{
+		position: relative;
+		width: 500%;
+		margin: 0;
+		left: 0;
+		animation: 10s slider infinite;
+	}
+	#slider figure img{
+		float: left;
+		width: 20%;
+	}
+	@keyframes slider{
+		0% {
+			left: 0;
+		}
+		20% {
+			left: 0;
+		}
+		25% {
+			left: -100%;
+		}
+		45% {
+			left: -100%;
+		}
+		50% {
+			left: -200%;
+		}
+		70% {
+			left: -200%;
+		}
+		75% {
+			left: -300%;
+		}
+		95% {
+			left: -300%;
+		}
+		100% {
+			left: -400%;
+		}
+	}
+	a:link,a:active {
+		color: blue;
+	}
+	a:hover {
+		background-color: yellow;
+	}
+	body {
+		height: 100vh;
+		background-image: url('file:///C:/Users/Sakshi/Downloads/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		color: black;
+	}
+	* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.aboutus {
+  float: left;
+  overflow: hidden;
+}
+.aboutus .abtbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.aboutus:hover .abtbtn {
+  background-color: green;
+}
+.aboutus-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.aboutus:hover .aboutus-content {
+  display: block;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: green;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: green;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+	    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" width="100" height="90" >
+	    <div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="aboutus">
+    <button class="abtbtn">About Us 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="aboutus-content">
+      	<h3 style="background-color: #d1cec5;">
+      
+    	<p>History:Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington.
+    	As the world's largest coffeehouse chain, Starbucks is seen to be the main representation of the United States' second wave of coffee culture.
+        As of September 2020, the company had 32,660 stores in 83 countries, including 16,637 company operated stores and 16,023 licensed stores,Of these 32,660 stores, 18,354 were in the United States, Canada, and Latin America.
+        Starbucks locations serve hot and cold drinks, whole-bean coffee, microground instant coffee known as VIA, espresso, caffe latte, full- and loose-leaf teas including Teavana tea products, Evolution Fresh juices, Frappuccino beverages, La Boulange pastries, and snacks including items such as chips and crackers;some offerings (including the annual fall launch of the Pumpkin Spice Latte) are seasonal or specific to the locality of the store. Depending on the country, most locations offer free Wi-Fi.</p>
+       
+      <b>Available locations:<br>
+      Pune
+      <br>
+        Mumbai
+        <br>
+        Bangluru,etc.</b>
+      <br>
+      <br>
+
+    	<b><button onclick="document.location='https://www.starbucks.in'">&#10145;Click here to know more</button></b>
+    	<br>
+    	<b>Thank You!&#128519;</b>
+      	</h3>
+      </div>
+</div>
+  <div class="dropdown">
+    <button class="dropbtn">Menu 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Mega Menu &#127857;</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3>Coffee &#9749;</h3>
+          <a href="coco.html">Cold coco &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 100/-</a>
+          <a href="capaccino.html">Capaccino &nbsp &nbsp &nbsp &nbsp &nbsp 499/-</a>
+          <a href="mocha.html">Mocha &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 399/-</a>
+        </div>
+        <div class="column">
+          <h3>Shakes &#127865;</h3>
+          <a href="mango.html">Mango &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 400/-</a>
+          <a href="strawberry.html">Strawberry &nbsp &nbsp &nbsp &nbsp 700/-</a>
+          <a href="custard.html">Custard &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 500/-</a>
+        </div>
+        <div class="column">
+          <h3>Fast food &#127829;</h3>
+          <a href="pizza.html">Pizzas &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 299/-</a>
+          <a href="pasta.html">Pastas &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 600/-</a>
+          <a href="sandwitch.html">Sandwitches &nbsp &nbsp &nbsp 399/-</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+    <div class="dropdown">
+    <button class="dropbtn">Order 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Order Here</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <input type="checkbox" id="Coffee" name="Coffee" value="Coffee">
+          <label for="Coffee"> Coffee &nbsp &nbsp &nbsp &nbsp 100/-</label><br>
+          <input type="checkbox" id="Shakes" name="Shakes" value="Shakes">
+          <label for="Shakes"> Shakes &nbsp &nbsp &nbsp &nbsp 300/-</label><br>
+          <input type="checkbox" id="Fast Food" name="Fastfood" value="Fastfood">
+          <label for="Fastfood"> Fast food &nbsp &nbsp &nbsp &nbsp 400/-</label><br><br>
+          <b><button onclick="document.location='file:///C:/Users/Sakshi/OneDrive/Desktop/Webathone/orders.html'">&#10145;Order Now</button></b>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+</div>
+
+
+        <!--slide-->
+	    <div id="slider">
+	    	<h1>Foodians!&#128525;</h1>
+    	<figure>
+    	<img src="C:\Users\Sakshi\OneDrive\Desktop\Webathone/michelle-tsang-VTt_Jn1LrOg-unsplash.jpg" height="600">
+    	<img src="C:\Users\Sakshi\OneDrive\Desktop\Webathone/davide-cantelli-jpkfc5_d-DI-unsplash.jpg" height="600">
+    	<img src="C:\Users\Sakshi\OneDrive\Desktop\Webathone/nathan-dumlao-6VhPY27jdps-unsplash.jpg"  height="600">
+    	<img src="C:\Users\Sakshi\OneDrive\Desktop\Webathone/jay-wennington-N_Y88TWmGwA-unsplash.jpg" height="600">
+    	</figure>
+        </div>
+	    <!--end-->	
+</body>
+</html>
